@@ -32,25 +32,233 @@ namespace Riddle_Game
         public MainWindow()
         {
             InitializeComponent();
+            StartGame();
+            NextQuestion();
         }
 
         private void checkAnswer(object sender, RoutedEventArgs e)
         {
+            Button senderButton = sender as Button;
+
+            if (senderButton.Tag.ToString() == "1")
+            {
+                score++;
+            }
+
+            if (qNum < 0)
+            {
+                qNum = 0;
+            }
+            else
+            {
+                qNum++;
+            }
+
+            scoreText.Content = "Answered Corectly" + score + "/" + questionNumbers.Count;
+            
+            NextQuestion();
 
         }
 
         private void RestartGame()
         {
+            score = 0;
+            qNum = 1;
+            i = 0;
+            StartGame();
 
         }
 
         private void NextQuestion()
         {
+            if (qNum < questionNumbers.Count)
+            {
+                i = questionNumbers[qNum];
+            }
+            else
+            {
+                RestartGame();
+            }
+
+
+            foreach (var x in myCanvas.Children.OfType<Button>())
+            {
+                x.Tag = "0";
+                x.Background = Brushes.DarkSalmon;
+            }
+
+            switch (i)
+            {
+
+                case 1:
+
+                    txtQuestion.Text = "Question 1";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2 Correct";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4";
+
+                    ans2.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 2:
+
+                    txtQuestion.Text = "Question 2";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4 Correct";
+
+                    ans4.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 3:
+
+                    txtQuestion.Text = "Question 3";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2 Correct";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4";
+
+                    ans2.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 4:
+
+                    txtQuestion.Text = "Question 4";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3 Correct";
+                    ans4.Content = "Answer 4";
+
+                    ans3.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 5:
+
+                    txtQuestion.Text = "Question 5";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3 Correct";
+                    ans4.Content = "Answer 4";
+
+                    ans3.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 6:
+
+                    txtQuestion.Text = "Question 6";
+
+                    ans1.Content = "Answer 1 Correct";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4";
+
+                    ans1.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 7:
+
+                    txtQuestion.Text = "Question 7";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4 Correct";
+
+                    ans4.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 8:
+
+                    txtQuestion.Text = "Question 8";
+
+                    ans1.Content = "Answer 1 Correct";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4";
+
+                    ans1.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 9:
+
+                    txtQuestion.Text = "Question 9";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2 Correct";
+                    ans3.Content = "Answer 3";
+                    ans4.Content = "Answer 4";
+
+                    ans2.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+                case 10:
+
+                    txtQuestion.Text = "Question 10";
+
+                    ans1.Content = "Answer 1";
+                    ans2.Content = "Answer 2";
+                    ans3.Content = "Answer 3 Correct";
+                    ans4.Content = "Answer 4";
+
+                    ans3.Tag = "1";
+
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+
+                    break;
+
+
+
+
+            }
 
         }
 
         private void StartGame()
         {
+            var randomList = questionNumbers.OrderBy(a => Guid.NewGuid()).ToList();
+
+            questionNumbers = randomList;
+
+            questionOrder.Content = null;
+
+            for (int i = 0; i < questionNumbers.Count; i++)
+            {
+                questionOrder.Content += " " + questionNumbers[i].ToString();
+            }
 
         }
     }

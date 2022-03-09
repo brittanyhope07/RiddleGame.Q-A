@@ -92,151 +92,151 @@ namespace Riddle_Game
 
                 case 1:
 
-                    txtQuestion.Text = "Question 1";
+                    txtQuestion.Text = "What has to be broken before you can use it?";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2 Correct";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "Remote";
+                    ans2.Content = "Egg";
+                    ans3.Content = "Glow Stick";
+                    ans4.Content = "Wrapper";
 
                     ans2.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 2:
 
-                    txtQuestion.Text = "Question 2";
+                    txtQuestion.Text = "What jumps when it walks and sit when its standing?";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4 Correct";
+                    ans1.Content = "Spider";
+                    ans2.Content = "Frog";
+                    ans3.Content = "Rabbit";
+                    ans4.Content = "Kangaroo";
 
                     ans4.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 3:
 
-                    txtQuestion.Text = "Question 3";
+                    txtQuestion.Text = "What can run but not walk?";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2 Correct";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "A Baby";
+                    ans2.Content = "River";
+                    ans3.Content = "Monkey";
+                    ans4.Content = "Radio";
 
                     ans2.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 4:
 
-                    txtQuestion.Text = "Question 4";
+                    txtQuestion.Text = "What can you catch but not throw?";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3 Correct";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "Ball";
+                    ans2.Content = "Fish";
+                    ans3.Content = "Cold";
+                    ans4.Content = "Dandelion";
 
                     ans3.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 5:
 
-                    txtQuestion.Text = "Question 5";
+                    txtQuestion.Text = "What kind of band never plays music";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3 Correct";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "Acoustic Band";
+                    ans2.Content = "Rap Band";
+                    ans3.Content = "Rubberband";
+                    ans4.Content = "None of the above";
 
                     ans3.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 6:
 
-                    txtQuestion.Text = "Question 6";
+                    txtQuestion.Text = "What has a neck but no head?";
 
-                    ans1.Content = "Answer 1 Correct";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "Bottle";
+                    ans2.Content = "Shadow";
+                    ans3.Content = "Tree";
+                    ans4.Content = "Worm";
 
                     ans1.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 7:
 
-                    txtQuestion.Text = "Question 7";
+                    txtQuestion.Text = "He is a man during the winter, but you might drink him in the summer";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4 Correct";
+                    ans1.Content = "Iceman";
+                    ans2.Content = "Jim";
+                    ans3.Content = "Jack";
+                    ans4.Content = "Frosty";
 
                     ans4.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 8:
 
-                    txtQuestion.Text = "Question 8";
+                    txtQuestion.Text = "I have no life, but I can die";
 
-                    ans1.Content = "Answer 1 Correct";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "Battery";
+                    ans2.Content = "Time";
+                    ans3.Content = "Daylight";
+                    ans4.Content = "Sound";
 
                     ans1.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 9:
 
-                    txtQuestion.Text = "Question 9";
+                    txtQuestion.Text = "When the water comes down, when it rains, I go up. What am I?";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2 Correct";
-                    ans3.Content = "Answer 3";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "River";
+                    ans2.Content = "Umbrella";
+                    ans3.Content = "Window";
+                    ans4.Content = "Temperature";
 
                     ans2.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 
                 case 10:
 
-                    txtQuestion.Text = "Question 10";
+                    txtQuestion.Text = "What month of the year has 28 days?";
 
-                    ans1.Content = "Answer 1";
-                    ans2.Content = "Answer 2";
-                    ans3.Content = "Answer 3 Correct";
-                    ans4.Content = "Answer 4";
+                    ans1.Content = "February";
+                    ans2.Content = "December";
+                    ans3.Content = "All of them";
+                    ans4.Content = "June";
 
                     ans3.Tag = "1";
 
-                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/game.png"));
+                    qImage.Source = new BitmapImage(new Uri("pack://application:,,,/images/game.png"));
 
                     break;
 

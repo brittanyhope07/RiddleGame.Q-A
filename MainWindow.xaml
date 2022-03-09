@@ -11,16 +11,16 @@
         <Label Name="scoreText" FontSize="18">Score: 0/10</Label>
         <Label Name="questionOrder" FontSize="18" Canvas.Left="349">Questions</Label>
 
-        <Image Name="qImage" Source="/images/game.png" Stretch="Uniform" Height="286" Width="572" Canvas.Left="108" Canvas.Top="-9" />
+        <Image Name="qImage" Source="/images/game.png" Stretch="Uniform" Height="286" Width="572" Canvas.Left="108" Canvas.Top="50" />
 
-        <TextBlock Name="txtQuestion" TextAlignment="Center" Padding="3" FontSize="20" Width="648" TextWrapping="Wrap" Canvas.Left="76" Canvas.Top="244">
+        <TextBlock Name="txtQuestion" TextAlignment="Center" Padding="3" FontSize="20" Width="648" TextWrapping="Wrap" Canvas.Left="76" Canvas.Top="277" RenderTransformOrigin="0.515,0.561">
             Hi thanks for playing The Riddle Game! All questions are multiple choice. Please click on the button to select your answer.
         </TextBlock>
 
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans1" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="434" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans2" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="509" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans3" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="434" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans4" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="509" />
+        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans1" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="381" />
+        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans2" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="459" />
+        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans3" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="381" RenderTransformOrigin="0.472,-0.533" />
+        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans4" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="459" RenderTransformOrigin="0.48,0.488" />
 
 
 

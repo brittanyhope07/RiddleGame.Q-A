@@ -20,9 +20,38 @@ namespace Riddle_Game
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        List<int> questionNumbers = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+
+        int qNum = 0;
+
+        int i;
+
+        int score;
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void checkAnswer(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RestartGame()
+        {
+
+        }
+
+        private void NextQuestion()
+        {
+
+        }
+
+        private void StartGame()
+        {
+
         }
     }
 }

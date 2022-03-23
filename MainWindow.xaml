@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Riddle_Game"
         mc:Ignorable="d"
         Title="Riddle Game" Height="600" Width="800">
-    <Canvas Name="myCanvas" Background="DarkSlateGray">
+    <Canvas Name="myCanvas" Background="PaleGoldenrod">
 
         <Label Name="scoreText" FontSize="18">Score: 0/10</Label>
         <Label Name="questionOrder" FontSize="18" Canvas.Left="349">Questions</Label>
@@ -17,10 +17,10 @@
             Hi thanks for playing The Riddle Game! All questions are multiple choice. Please click on the button to select your answer.
         </TextBlock>
 
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans1" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="381" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans2" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="459" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans3" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="381" RenderTransformOrigin="0.472,-0.533" />
-        <Button Background="DarkSalmon" FontSize="18" Click="checkAnswer" Name="ans4" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="459" RenderTransformOrigin="0.48,0.488" />
+        <Button Background="PaleTurquoise" FontSize="18" Click="checkAnswer" Name="ans1" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="381" />
+        <Button Background="PaleTurquoise" FontSize="18" Click="checkAnswer" Name="ans2" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="104" Canvas.Top="459" />
+        <Button Background="PaleTurquoise" FontSize="18" Click="checkAnswer" Name="ans3" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="381" RenderTransformOrigin="0.472,-0.533" />
+        <Button Background="PaleTurquoise" FontSize="18" Click="checkAnswer" Name="ans4" Width="200" Height="50" Content="Answer 1" Tag="0" Canvas.Left="496" Canvas.Top="459" RenderTransformOrigin="0.48,0.488" />
 
 
 

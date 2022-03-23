@@ -54,7 +54,7 @@ namespace Riddle_Game
                 qNum++;
             }
 
-            scoreText.Content = "Answered Corectly" + score + "/" + questionNumbers.Count;
+            scoreText.Content = "Answered Correctly" + score + "/" + questionNumbers.Count;
             
             NextQuestion();
 
@@ -152,7 +152,7 @@ namespace Riddle_Game
 
                 case 5:
 
-                    txtQuestion.Text = "What kind of band never plays music";
+                    txtQuestion.Text = "What kind of band never plays music?";
 
                     ans1.Content = "Acoustic Band";
                     ans2.Content = "Rap Band";
